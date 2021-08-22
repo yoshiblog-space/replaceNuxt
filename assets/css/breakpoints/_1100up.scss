@@ -1,0 +1,135 @@
+.main {
+  &__about {
+    &__img-box {
+      height: 600px;
+      width: 67%;
+      
+
+      &__img {
+        height: 600px;
+      }
+    }
+
+    &__title {
+      padding-left: 22%;
+    }
+  }
+  &__service{
+    &__title{
+      padding-left: 15%;
+      padding-bottom: 87px;
+    }
+    &__contents {
+      padding-left:10%;
+      padding-right:10%;
+    }
+  }
+
+
+  &__member {
+    height: 1060px;
+
+    &__title {
+      font-size: 72px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    &__card-box {
+      width: 1100px;
+      height: 650px;
+      margin: 0 auto;
+    }
+
+  }
+
+
+}
+
+.member-card {
+  padding-left: 0;
+
+  &__content {
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-right: 60px;
+    width: 520px;
+    height: 660px;
+  }
+
+  &__profile {
+    padding: 26.9px 45px 23px 45px;
+  }
+
+  &__img {
+    width: 520px;
+    height: 312px;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 28px;
+  }
+
+  &__sns-icon {
+    vertical-align: top;
+  }
+
+  &__position {
+    font-size: 18px;
+    padding-bottom: 34px;
+  }
+
+  &__description {
+    font-size: 16px;
+
+  }
+}
+
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-580px);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(-580px);
+  }
+
+  100% {
+    transform: translateX(-1160px);
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    transform: translateX(-1160px);
+  }
+
+  100% {
+    transform: translateX(-1740px);
+  }
+}
+
+
+
+@keyframes revslide2 {
+  0% {
+    transform: translateX(-1740px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.form-block {
+  max-width: 760px;
+  padding: 91px 64px;
+}

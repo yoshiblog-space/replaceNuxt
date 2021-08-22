@@ -1,0 +1,51 @@
+//ボタンクリック前
+.menu {
+
+  &__btn {
+    background-color: unset;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+
+    &>span {
+      background-color: $cMenuClose;
+      width: 20px;
+      height: 2px;
+      display: block;
+      margin-bottom: 9px;
+      transition: transform 0.7s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+// ボタンクリック後
+.menu-open {
+  & .menu {
+    &__btn {
+      &>span {
+        background-color: $cMenuOpen;
+
+        &:nth-child(1) {
+          transition-delay: 70ms;
+          transform: translateY(11px) rotate(135deg);
+        }
+
+        &:nth-child(2) {
+          transition-delay: 0s;
+          transform: translateX(-10px) scaleX(0);
+        }
+
+        &:nth-child(3) {
+          transition-delay: 140ms;
+          transform: translateY(-11px) rotate(-135deg);
+          width: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.main {
+  &__about {
+    &__img-box {
+      &__img {
+        object-position: 48% -130px;
+      }
+    }
+
+    &__title {
+      padding-top: 100px;
+    }
+
+    &__contents {
+      &__paragraph {
+        display: inline-block;
+        top: -120px;
+        left: 10%;
+        position: relative;
+
+        &>span {
+          font-size: 18px;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  &__company {
+    transform: translateX(0);
+  }
+  &__copyright{
+       &__box {
+         width: 1000px;
+       }
+  }
+}
