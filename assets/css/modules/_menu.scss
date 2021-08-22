@@ -1,0 +1,51 @@
+@keyframes menuopen-up {
+  0% {
+    visibility: hidden;
+        opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  50% {
+    visibility: hidden;
+        opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  50.1% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuopen-right {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  50% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  50.1% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}

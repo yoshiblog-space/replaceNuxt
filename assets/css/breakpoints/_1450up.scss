@@ -1,0 +1,128 @@
+.header {
+  height: 1200px;
+
+  &__menu {
+    &__company {
+      &__name {
+        font-size: 48px;
+      }
+    }
+  }
+
+  &__nav__open {
+    &__menu {
+      &__box {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__back {
+    &__logo-img {
+      left: 38%;
+      max-width: 1194px;
+      max-height: 896px;
+      width: 63%;
+      height: 74%;
+      top: 184px;
+
+    }
+  }
+
+  &__scroll-btn {
+    top: 900px;
+  }
+
+  &__text {
+    font-size: 95px;
+  }
+}
+
+
+.main {
+  &__contact {
+    padding: 11% 20%;
+
+    &::before {
+      top: 11%;
+      left: 15%;
+      width: 75%;
+      max-width: 1300px;
+      height: 420px;
+    }
+
+    &__title {
+      font-size: 72px;
+      position: absolute;
+      top: 14%;
+      left: 15%;
+    }
+
+    &__form {
+      position: absolute;
+      top: 25%;
+      right: 18%;
+      width: 760px;
+    }
+
+    &__back-base {
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1100px;
+      object-fit: cover;
+      object-position: 0 0;
+    }
+  }
+
+  &__service {
+    &__title {
+      padding-left: 21%;
+    }
+
+    &__contents {
+      max-width: 1100px;
+      margin:0 auto;
+      padding-left:0;
+      padding-right:0;
+      padding-bottom: 118px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.service-contents {
+  &__box {
+    width: 520px;
+    height: 650px;
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  &__img-box {
+    &__sp-img {
+      width: 160px;
+      margin-top: 73px;
+      margin-bottom: 66px;
+    }
+
+    &__pc-img {
+      width: 193px;
+      margin-top: 74px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+}

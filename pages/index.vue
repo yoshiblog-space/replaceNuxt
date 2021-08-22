@@ -1,7 +1,5 @@
 <template>
-  <Tutorial/>
+  <div>
+    <h1>index vue</h1>
+  </div>
 </template>
-
-<script>
-export default {}
-</script>

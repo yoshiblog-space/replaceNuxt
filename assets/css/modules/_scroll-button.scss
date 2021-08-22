@@ -1,0 +1,72 @@
+.scroll-button {
+  display: block;
+  background-color: transparent;
+  width: 100px;
+  height: 200px;
+  padding: 10px 0px;
+  text-align: center;
+  color: #7B7D81;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  margin: 0 auto;
+
+  &>span {
+    @extend .bebas-rg;
+    font-size: 50px;
+    display: block;
+    position: relative;
+
+    &:last-child {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 50%;
+        bottom: 0;
+        margin: auto;
+        width: 2px;
+        height: 64px;
+        background: #7B7D81;
+        transition: .3s;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 41px;
+        left: 41px;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        border-left: 2px solid #7B7D81;
+        border-bottom: 2px solid #7B7D81;
+        transform: rotate(-45deg);
+        transition: .3s;
+      }
+    }
+  }
+
+  &:hover {
+
+    color: #FFEA00;
+    text-decoration: none;
+
+    &>span {
+      &:last-child {
+        &::before {
+          background-color:#FFEA00;
+          top: 120px;
+          height: 130px;
+        }
+
+        &::after {
+          border-color:#FFEA00;
+          top: 103px;
+        }
+      }
+    }
+  }
+}
